@@ -1,0 +1,6 @@
+framework module Pods_Cycl_o_Space {
+  umbrella header "Pods-Cycl-o-Space-umbrella.h"
+
+  export *
+  module * { export * }
+}

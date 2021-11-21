@@ -1,0 +1,6 @@
+framework module Pods_Cycl_o_Space_Cycl_o_SpaceUITests {
+  umbrella header "Pods-Cycl-o-Space-Cycl-o-SpaceUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
