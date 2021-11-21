@@ -117,6 +117,8 @@ Optional:
 
 <img src="https://media.giphy.com/media/JL2ihAsT0hmiVLpLQu/giphy.gif" width=600>
 
+<img src="https://media.giphy.com/media/0V84uQzssBoO0aDGqe/giphy.gif" width=600>
+
 ### [BONUS] Interactive Prototype
 
 ## Schema 
