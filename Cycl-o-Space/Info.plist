@@ -4,6 +4,8 @@
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>To show your location on the map</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow camera access to upload pictures or videos!</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

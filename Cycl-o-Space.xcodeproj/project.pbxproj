@@ -23,9 +23,9 @@
 		D936D365273DC92600544F50 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D936D364273DC92600544F50 /* Camera.storyboard */; };
 		D936D367273DC93B00544F50 /* Routes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D936D366273DC93B00544F50 /* Routes.storyboard */; };
 		D936D369273DC97700544F50 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D936D368273DC97700544F50 /* Network.storyboard */; };
-		D93E3A5E2723631400864205 /* CameraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E3A5D2723631400864205 /* CameraTableViewController.swift */; };
 		D93E3A602723635000864205 /* RoutesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E3A5F2723635000864205 /* RoutesTableViewController.swift */; };
 		D93E3A622723868C00864205 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E3A612723868B00864205 /* LogInViewController.swift */; };
+		D9D34BAA274B1DEE0012B8E2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */; };
 		D9DD3FB42749AD3900F09F85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */; };
 		D9DD3FB62749BDC400F09F85 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3FB52749BDC400F09F85 /* SignUpViewController.swift */; };
 		EBC620947F9C50B00870A9E6 /* Pods_Cycl_o_Space_Cycl_o_SpaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F8723D55D359C716E395F9 /* Pods_Cycl_o_Space_Cycl_o_SpaceUITests.framework */; };
@@ -77,9 +77,9 @@
 		D936D364273DC92600544F50 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		D936D366273DC93B00544F50 /* Routes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Routes.storyboard; sourceTree = "<group>"; };
 		D936D368273DC97700544F50 /* Network.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
-		D93E3A5D2723631400864205 /* CameraTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTableViewController.swift; sourceTree = "<group>"; };
 		D93E3A5F2723635000864205 /* RoutesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesTableViewController.swift; sourceTree = "<group>"; };
 		D93E3A612723868B00864205 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D9DD3FB52749BDC400F09F85 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DFA3C9DEB2F9B5B0DEF884BD /* Pods-Cycl-o-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cycl-o-Space.debug.xcconfig"; path = "Target Support Files/Pods-Cycl-o-Space/Pods-Cycl-o-Space.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 				D91F895E2748610E00FF33BE /* FeedViewController.swift */,
 				D91F896027486EFA00FF33BE /* postGridCell.swift */,
 				D936D364273DC92600544F50 /* Camera.storyboard */,
-				D93E3A5D2723631400864205 /* CameraTableViewController.swift */,
+				D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */,
 				D936D366273DC93B00544F50 /* Routes.storyboard */,
 				D93E3A5F2723635000864205 /* RoutesTableViewController.swift */,
 				D936D368273DC97700544F50 /* Network.storyboard */,
@@ -452,7 +452,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D93E3A5E2723631400864205 /* CameraTableViewController.swift in Sources */,
 				D93E3A622723868C00864205 /* LogInViewController.swift in Sources */,
 				D91F896127486EFB00FF33BE /* postGridCell.swift in Sources */,
 				D927AB2F272342B800146371 /* AppDelegate.swift in Sources */,
@@ -461,6 +460,7 @@
 				D9DD3FB62749BDC400F09F85 /* SignUpViewController.swift in Sources */,
 				D91F895F2748610E00FF33BE /* FeedViewController.swift in Sources */,
 				D93E3A602723635000864205 /* RoutesTableViewController.swift in Sources */,
+				D9D34BAA274B1DEE0012B8E2 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
