@@ -4,8 +4,10 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.crop.circle.fill.badge.plus" catalog="system" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ORr-P7-coD">
-                                <rect key="frame" x="116.5" y="107" width="179" height="128"/>
+                                <rect key="frame" x="116.5" y="129" width="179" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
@@ -79,18 +81,6 @@
                                 <color key="textColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zD4-OA-mnU">
-                                <rect key="frame" x="0.0" y="302" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <tabBarItem title="Posts" id="bSP-VS-mvc">
-                                        <imageReference key="image" image="line.horizontal.3" catalog="system"/>
-                                    </tabBarItem>
-                                    <tabBarItem title="Previous Routes" image="mappin" catalog="system" id="hbQ-eO-A35"/>
-                                    <tabBarItem title="Favorited" image="heart.fill" catalog="system" id="sGj-Z6-bPf"/>
-                                </items>
-                            </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xe-Zy-Z3M">
                                 <rect key="frame" x="118" y="257" width="64" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -105,6 +95,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FuN-zL-ePN" userLabel="PostsDetails">
+                                <rect key="frame" x="0.0" y="383" width="414" height="430"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Pkd-rh-wxY" kind="embed" id="mlg-wy-zgJ"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dh5-CK-AJT" userLabel="PreviousRoutesDetails">
+                                <rect key="frame" x="0.0" y="383" width="414" height="430"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="bcI-Q6-Q2Y" kind="embed" id="eLf-5D-sm3"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uJN-1W-gIu" userLabel="FavoritedDetails">
+                                <rect key="frame" x="0.0" y="383" width="414" height="430"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="NLx-7j-8ys" kind="embed" id="SAF-qX-3RK"/>
+                                </connections>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9bZ-fU-UE0">
+                                <rect key="frame" x="-1" y="348" width="414" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="">
+                                        <imageReference key="image" image="table" catalog="system" symbolScale="large"/>
+                                    </segment>
+                                    <segment title="">
+                                        <imageReference key="image" image="clock.fill" catalog="system" symbolScale="large"/>
+                                    </segment>
+                                    <segment title="">
+                                        <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                    </segment>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="tabSwitch:" destination="yAh-fq-UG1" eventType="valueChanged" id="kOr-Zm-EEY"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rlz-Mk-sDN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -117,8 +147,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="Favorited" destination="uJN-1W-gIu" id="QEw-f3-0HJ"/>
+                        <outlet property="PostDetails" destination="FuN-zL-ePN" id="A25-08-7gc"/>
+                        <outlet property="PreviousRoutesDetails" destination="Dh5-CK-AJT" id="c3t-YC-6Qy"/>
                         <outlet property="profilePic" destination="ORr-P7-coD" id="c7S-PG-Xqv"/>
                         <outlet property="profileUsername" destination="dbN-DR-t5a" id="asQ-Nw-UyE"/>
+                        <outlet property="tabDetailsSwitch" destination="9bZ-fU-UE0" id="5HW-Tt-qBo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ8-sT-ouV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -130,7 +164,7 @@
             </objects>
             <point key="canvasLocation" x="-286.95652173913044" y="-178.125"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="ozj-DJ-qSX">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="SRq-P0-MN7" sceneMemberID="viewController">
@@ -140,7 +174,7 @@
                         <viewLayoutGuide key="safeArea" id="NRD-9a-Ajy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5rc-TW-g0F"/>
+                    <navigationItem key="navigationItem" title="Settings" id="5rc-TW-g0F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7v-gi-Fys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,19 +212,106 @@
             </objects>
             <point key="canvasLocation" x="-1220" y="-879"/>
         </scene>
+        <!--Posts Details View Controller-->
+        <scene sceneID="xP4-fJ-C2w">
+            <objects>
+                <viewController storyboardIdentifier="PostsDetails" id="Pkd-rh-wxY" customClass="PostsDetailsViewController" customModule="Cycl_o_Space" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OjG-7B-tQP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="430"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UGZ-zP-DI0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bzL-OM-NgA">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UYX-ma-l9i">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6Yv-4H-hoM">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0KT-2d-KEN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <color key="tintColor" name="AccentColor"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0KT-2d-KEN" firstAttribute="centerX" secondItem="6Yv-4H-hoM" secondAttribute="centerX" id="7rd-vT-dCT"/>
+                                                <constraint firstAttribute="trailing" secondItem="0KT-2d-KEN" secondAttribute="trailing" id="MVd-TS-12b"/>
+                                                <constraint firstItem="0KT-2d-KEN" firstAttribute="leading" secondItem="6Yv-4H-hoM" secondAttribute="leading" id="S9h-z2-9pu"/>
+                                                <constraint firstItem="0KT-2d-KEN" firstAttribute="top" secondItem="6Yv-4H-hoM" secondAttribute="top" id="bfk-Eh-ZMP"/>
+                                                <constraint firstAttribute="bottom" secondItem="0KT-2d-KEN" secondAttribute="bottom" id="j4x-mw-Wag"/>
+                                                <constraint firstItem="0KT-2d-KEN" firstAttribute="centerY" secondItem="6Yv-4H-hoM" secondAttribute="centerY" id="niI-yO-TEe"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="UGZ-zP-DI0" id="sNU-kV-uub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bIg-bn-nkk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-913.04347826086962" y="373.66071428571428"/>
+        </scene>
+        <!--Previous Routes Details View Controller-->
+        <scene sceneID="lwv-f0-9WG">
+            <objects>
+                <viewController storyboardIdentifier="PreviousRoutesDetails" id="bcI-Q6-Q2Y" customClass="PreviousRoutesDetailsViewController" customModule="Cycl_o_Space" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yzd-Ee-of2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="430"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.37867967429999999" green="0.50474772749999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNp-qe-C9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-288" y="374"/>
+        </scene>
+        <!--Favorited Details View Controller-->
+        <scene sceneID="iGq-wp-2kD">
+            <objects>
+                <viewController storyboardIdentifier="FavoritedDetails" id="NLx-7j-8ys" customClass="FavoritedDetailsViewController" customModule="Cycl_o_Space" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fgy-gJ-WsE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="430"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3L-w9-Kgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="380"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
-        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
-        <image name="mappin" catalog="system" width="105" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.crop.circle.fill.badge.plus" catalog="system" width="128" height="113"/>
+        <image name="table" catalog="system" width="128" height="93"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>

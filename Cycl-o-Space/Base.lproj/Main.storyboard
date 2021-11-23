@@ -178,17 +178,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbV-yA-x9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1925" y="-1211"/>
-        </scene>
-        <!--Routes-->
-        <scene sceneID="Ald-1e-vux">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Routes" id="doy-jj-Xih" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Bk9-Za-Qek"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a3k-sJ-owh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2562" y="-1211"/>
+            <point key="canvasLocation" x="2507" y="-1211"/>
         </scene>
         <!--Network-->
         <scene sceneID="LPo-iE-tfS">
@@ -214,7 +204,6 @@
                         <segue destination="9md-Eg-J3v" kind="relationship" relationship="viewControllers" id="0Ua-JX-Ync"/>
                         <segue destination="Tyv-QY-tBs" kind="relationship" relationship="viewControllers" id="tMz-aE-5XG"/>
                         <segue destination="4yi-Hd-kci" kind="relationship" relationship="viewControllers" id="q8c-HD-bVS"/>
-                        <segue destination="doy-jj-Xih" kind="relationship" relationship="viewControllers" id="DR0-qC-bmj"/>
                         <segue destination="b6d-YC-LbT" kind="relationship" relationship="viewControllers" id="G9U-wC-Qt3"/>
                     </connections>
                 </tabBarController>

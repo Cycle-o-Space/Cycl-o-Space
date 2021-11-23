@@ -9,19 +9,54 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class ProfileViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate, UITabBarDelegate {
 
     @IBOutlet weak var profilePic: UIImageView!
     
     @IBOutlet weak var profileUsername: UILabel!
     
+    @IBOutlet weak var PostDetails: UIView!
+    
+    @IBOutlet weak var PreviousRoutesDetails: UIView!
+    
+    @IBOutlet weak var Favorited: UIView!
+    
+    @IBOutlet weak var tabDetailsSwitch: UISegmentedControl!
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        PostDetails.isHidden = false
+        PreviousRoutesDetails.isHidden = true
+        Favorited.isHidden = true
 
     }
 
+    @IBAction func tabSwitch(_ sender: UISegmentedControl) {
+        
+        switch sender.selectedSegmentIndex {
+    case 0:
+            PostDetails.isHidden = false
+            PreviousRoutesDetails.isHidden = true
+            Favorited.isHidden = true
+        
+    case 1:
+            PostDetails.isHidden = true
+            PreviousRoutesDetails.isHidden = false
+            Favorited.isHidden = true
+     
+    case 2:
+            PostDetails.isHidden = true
+            PreviousRoutesDetails.isHidden = true
+            Favorited.isHidden = false
+        
+    default:
+            break;
+
+    }
+    }
     
     @IBAction func onProfilePicCamera(_ sender: Any) {
         let picker = UIImagePickerController()
@@ -37,6 +72,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         present(picker, animated: true, completion: nil)
         
     }
+    
+
+
     
     /*
     // MARK: - Navigation

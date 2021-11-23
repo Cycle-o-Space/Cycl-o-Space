@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Network-->
+        <!--Explore-->
         <scene sceneID="VF9-MH-I08">
             <objects>
                 <tableViewController id="5ZG-4J-ktC" sceneMemberID="viewController">
@@ -31,17 +31,17 @@
                             <outlet property="delegate" destination="5ZG-4J-ktC" id="6M1-SG-FV4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Network" id="PfN-Ig-dkl"/>
+                    <navigationItem key="navigationItem" title="Explore" id="PfN-Ig-dkl"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Rn-2C-C0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3258" y="-181"/>
         </scene>
-        <!--Network-->
+        <!--Explore-->
         <scene sceneID="nF0-A0-A2O">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="abl-e9-w7n" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Network" id="brH-Jw-Jit">
+                    <tabBarItem key="tabBarItem" title="Explore" id="brH-Jw-Jit">
                         <imageReference key="image" image="person.3.fill" catalog="system" renderingMode="hierarchical-single">
                             <hierarchicalColors>
                                 <color red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

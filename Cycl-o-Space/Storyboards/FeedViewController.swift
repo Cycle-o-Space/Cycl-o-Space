@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
 class FeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -40,12 +41,11 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//self.loadMorePosts()
+
 
         myRefreshControl.addTarget(self, action: #selector(loadMorePosts), for: .valueChanged)
         self.collectionView.refreshControl = myRefreshControl
-//        tableView.rowHeight = 469
-//        tableView.estimatedRowHeight = 469
+
     }
     @objc func loadPosts(){
         numberofPosts = 20
@@ -88,9 +88,6 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return posts.count
     }
-//    func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        return posts.count
-//    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -101,10 +98,12 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "postGridCell", for: indexPath) as! postGridCell
         
             let user = post["author"] as! PFUser
+        
         cell.usernameLabel.text = user.username
         
-       // cell.captionLabel.text = post["caption"] as? String
+        // cell.profilePhoto.image =
         
+       //cell.captionLabel.text = post["caption"] as? String
         let imageFile = post["image"] as! PFFileObject
         
         let urlString = imageFile.url!
@@ -115,14 +114,16 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
         return cell
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         // Get the new view controller using segue.destination.
+        
         // Pass the selected object to the new view controller.
-    }
-    */
+ //   }
+
 
 }
