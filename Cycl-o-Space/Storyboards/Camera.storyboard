@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Camera View Controller-->
+        <!--Capture-->
         <scene sceneID="vfn-kc-rhC">
             <objects>
                 <viewController id="Ium-K4-41g" customClass="CameraViewController" customModule="Cycl_o_Space" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="QBM-Yu-1M7">
-                                <rect key="frame" x="11" y="98" width="393" height="589"/>
+                                <rect key="frame" x="11" y="98" width="393" height="504"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -26,23 +26,26 @@
                                 </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your caption here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQt-Df-UV1">
-                                <rect key="frame" x="88.5" y="718" width="238" height="34"/>
+                                <rect key="frame" x="88" y="646" width="238" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyZ-ip-Jmg">
+                                <rect key="frame" x="88" y="719" width="239" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Upload "/>
+                                <connections>
+                                    <action selector="onSubmitButton:" destination="Ium-K4-41g" eventType="touchUpInside" id="lLd-IJ-wOz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rQe-Wb-1AW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                     </view>
-                    <navigationItem key="navigationItem" id="d0P-rZ-h4m">
-                        <barButtonItem key="rightBarButtonItem" title="Upload" id="8lO-4o-pPB">
-                            <connections>
-                                <action selector="onSubmitButton:" destination="Ium-K4-41g" id="ilB-xE-cW1"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Capture" id="d0P-rZ-h4m"/>
                     <connections>
                         <outlet property="commentField" destination="YQt-Df-UV1" id="aPM-JV-Fg9"/>
                         <outlet property="imageView" destination="QBM-Yu-1M7" id="lg0-K4-INS"/>

@@ -25,6 +25,7 @@
 		D936D369273DC97700544F50 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D936D368273DC97700544F50 /* Network.storyboard */; };
 		D93E3A602723635000864205 /* RoutesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E3A5F2723635000864205 /* RoutesTableViewController.swift */; };
 		D93E3A622723868C00864205 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E3A612723868B00864205 /* LogInViewController.swift */; };
+		D98488F1274C511400606133 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98488F0274C511400606133 /* ProfileViewController.swift */; };
 		D9D34BAA274B1DEE0012B8E2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */; };
 		D9DD3FB42749AD3900F09F85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */; };
 		D9DD3FB62749BDC400F09F85 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3FB52749BDC400F09F85 /* SignUpViewController.swift */; };
@@ -79,6 +80,7 @@
 		D936D368273DC97700544F50 /* Network.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
 		D93E3A5F2723635000864205 /* RoutesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesTableViewController.swift; sourceTree = "<group>"; };
 		D93E3A612723868B00864205 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		D98488F0274C511400606133 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D9DD3FB52749BDC400F09F85 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			children = (
 				D936D360273DC8F000544F50 /* Home.storyboard */,
 				D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */,
+				D98488F0274C511400606133 /* ProfileViewController.swift */,
 				D936D362273DC90D00544F50 /* Feed.storyboard */,
 				D91F895E2748610E00FF33BE /* FeedViewController.swift */,
 				D91F896027486EFA00FF33BE /* postGridCell.swift */,
@@ -454,6 +457,7 @@
 			files = (
 				D93E3A622723868C00864205 /* LogInViewController.swift in Sources */,
 				D91F896127486EFB00FF33BE /* postGridCell.swift in Sources */,
+				D98488F1274C511400606133 /* ProfileViewController.swift in Sources */,
 				D927AB2F272342B800146371 /* AppDelegate.swift in Sources */,
 				D9DD3FB42749AD3900F09F85 /* HomeViewController.swift in Sources */,
 				D927AB31272342B800146371 /* SceneDelegate.swift in Sources */,

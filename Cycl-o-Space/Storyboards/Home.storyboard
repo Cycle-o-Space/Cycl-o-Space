@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Lounge-->
+        <!--Ride-->
         <scene sceneID="uZS-qn-moo">
             <objects>
                 <viewController storyboardIdentifier="Home" id="FOy-Dh-yk4" customClass="HomeViewController" customModule="Cycl_o_Space" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,17 +33,17 @@
                             <constraint firstItem="LuV-XH-Ovn" firstAttribute="centerX" secondItem="ssq-iO-Mrd" secondAttribute="centerX" id="z0t-Uv-n8F"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Lounge" id="ddX-Hy-OWU">
+                    <navigationItem key="navigationItem" title="Ride" id="ddX-Hy-OWU">
                         <barButtonItem key="leftBarButtonItem" title="Log Out" id="SP5-9Z-SDe">
                             <connections>
                                 <action selector="onLogOut:" destination="FOy-Dh-yk4" id="sT6-01-ad5"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="Bq5-hQ-Vj8">
-                            <imageReference key="image" image="person.circle" catalog="system" symbolScale="large"/>
+                        <barButtonItem key="rightBarButtonItem" title="Profile" id="Bq5-hQ-Vj8">
+                            <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="yAh-fq-UG1" kind="show" id="21P-qo-Cif"/>
+                                <segue destination="yAh-fq-UG1" kind="show" id="nt1-Ur-sl0"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -58,18 +58,93 @@
         <!--Profile-->
         <scene sceneID="n8T-mO-z4k">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="yAh-fq-UG1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" modalPresentationStyle="fullScreen" id="yAh-fq-UG1" customClass="ProfileViewController" customModule="Cycl_o_Space" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GBH-dM-3BI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.crop.circle.fill.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ORr-P7-coD">
+                                <rect key="frame" x="116.5" y="107" width="179" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Odh-c1-tae" appends="YES" id="cN3-D3-TX9"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbN-DR-t5a">
+                                <rect key="frame" x="190" y="257" width="115" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zD4-OA-mnU">
+                                <rect key="frame" x="0.0" y="302" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <tabBarItem title="Posts" id="bSP-VS-mvc">
+                                        <imageReference key="image" image="line.horizontal.3" catalog="system"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Previous Routes" image="mappin" catalog="system" id="hbQ-eO-A35"/>
+                                    <tabBarItem title="Favorited" id="sGj-Z6-bPf"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xe-Zy-Z3M">
+                                <rect key="frame" x="118" y="257" width="64" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6b-k3-gCv">
+                                <rect key="frame" x="306" y="257" width="8" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rlz-Mk-sDN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="ZYb-TV-qYX"/>
+                    <navigationItem key="navigationItem" title="Profile" id="ZYb-TV-qYX">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="rgI-XF-W7X">
+                            <connections>
+                                <segue destination="SRq-P0-MN7" kind="show" id="cOy-88-SJa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profilePic" destination="ORr-P7-coD" id="c7S-PG-Xqv"/>
+                        <outlet property="profileUsername" destination="dbN-DR-t5a" id="asQ-Nw-UyE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ8-sT-ouV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Odh-c1-tae">
+                    <connections>
+                        <action selector="onProfilePicCamera:" destination="yAh-fq-UG1" id="riY-u2-qfF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-213" y="-178"/>
+            <point key="canvasLocation" x="-286.95652173913044" y="-178.125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ozj-DJ-qSX">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="SRq-P0-MN7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1pz-wc-f69">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NRD-9a-Ajy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5rc-TW-g0F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7v-gi-Fys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="-178"/>
         </scene>
         <!--Home-->
         <scene sceneID="wvR-9i-PpW">
@@ -106,7 +181,10 @@
     </scenes>
     <resources>
         <image name="homekit" catalog="system" width="128" height="106"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <image name="mappin" catalog="system" width="105" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.crop.circle.fill.badge.plus" catalog="system" width="128" height="113"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
