@@ -127,6 +127,8 @@ Latest
 
 <img src="http://g.recordit.co/Pqbfyy0YQ4.gif" width=600>
 
+<img src="http://g.recordit.co/maUNpTag6v.gif" width=600>
+
 ### [BONUS] Interactive Prototype
 
 ## Schema 
