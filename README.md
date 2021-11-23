@@ -28,17 +28,18 @@ Cycl-o-Space is an app that gives people who might need companion while cycling 
 
 **Required Must-have Stories**
 
-* User can create a new account
-* User can log in
-* User can view own profile
-* User can post a new photo to their feed
-* User can view a navigation map to start a freestyle ride and/or look up directions
-* User can search for other users
-* User can like a photo
-* User can follow/unfollow another user
-* User can view a feed of photos
-* User can modify the app settings
-* User can log out
+* [x] User can create a new account
+* [x] User can log in
+* [ ] User can view own profile
+* [x] User can post a new photo to their feed
+* [x] User can view a navigation map in home tab
+* [ ] User can search for other users
+* [ ] User can like a photo
+* [ ] User can follow/unfollow another user
+* [x] User can view a feed of photos
+* [ ] User can modify the app settings
+* [x] User can log out
+* [ ] User can comment on a photo.
 
 **Optional Nice-to-have Stories**
 
@@ -47,7 +48,6 @@ Cycl-o-Space is an app that gives people who might need companion while cycling 
 * User can see a list of their followers.
 * User can see a list of their following.
 * User can use unit conversion for navigation.
-* User can comment on a photo.
 * User can switch appearance light/dark mode.
 * User can see trending photos.
 * User can search for photos by a hashtag.
@@ -117,7 +117,15 @@ Optional:
 
 <img src="https://media.giphy.com/media/JL2ihAsT0hmiVLpLQu/giphy.gif" width=600>
 
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
 <img src="https://media.giphy.com/media/0V84uQzssBoO0aDGqe/giphy.gif" width=600>
+
+Latest 
+
+<img src="http://g.recordit.co/Pqbfyy0YQ4.gif" width=600>
 
 ### [BONUS] Interactive Prototype
 
