@@ -36,10 +36,9 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
 //            .degree(45)
 //            .pitchEffect(.pitchUp)
         collectionView.gemini
-            .circleRotationAnimation()
-            .radius(450) // The radius of the circle
-            .rotateDirection(.clockwise) // Direction of rotation.
-            .itemRotationEnabled(true) // Whether the item rotates or not.
+            .yawRotationAnimation()
+            .degree(45)
+            .yawEffect(.yawUp)
            // .cornerRadius()
 //
 //        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
@@ -95,11 +94,20 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     @objc func loadPosts(){
         numberofPosts = 20
-        let query = PFQuery(className:"Posts")
-        query.includeKeys(["author", "comments", "comments.author"])
-        query.limit = numberofPosts
+        let post = PFObject(className: "Posts")
         
-        query.findObjectsInBackground { (posts, error) in
+        //post["caption"] = commentField.text!
+        post["author"] = PFUser.current()!
+        let postQuery = PFQuery(className:"Posts")
+        if let user = PFUser.current() {
+          postQuery.whereKey("author", equalTo: user)
+        }
+//        let query = PFQuery(className:"Posts")
+//        query.includeKeys(["author", "comments", "comments.author"])
+
+        postQuery.limit = numberofPosts
+        
+        postQuery.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts.removeAll()
                 self.posts = posts!
@@ -113,11 +121,18 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @objc func loadMorePosts(){
         numberofPosts += 20
-        let query = PFQuery(className:"Posts")
-        query.includeKeys(["author", "comments", "comments.author"])
-        query.limit = numberofPosts
+        let post = PFObject(className: "Posts")
         
-        query.findObjectsInBackground { (posts, error) in
+        //post["caption"] = commentField.text!
+        post["author"] = PFUser.current()!
+        let postQuery = PFQuery(className:"Posts")
+        if let user = PFUser.current() {
+          postQuery.whereKey("author", equalTo: user)
+        }
+//        postQuery.includeKeys(["author", "comments", "comments.author"])
+        postQuery.limit = numberofPosts
+        
+        postQuery.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts.removeAll()
                 self.posts = posts!
@@ -138,15 +153,17 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let post = posts[indexPath.row]
+        print(post)
         
 
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "postGridCell", for: indexPath) as! postGridCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "postGridCell", for: indexPath) as! postGridCell
         self.collectionView.animateCell(cell)
                 
         
-            let user = post["author"] as! PFUser
-        
-        cell.usernameLabel.text = user.username
+       // let user = post["author"] as! PFUser
+
+        cell.usernameLabel.text = PFUser.current()?.username
+
         
         // cell.profilePhoto.image =
         

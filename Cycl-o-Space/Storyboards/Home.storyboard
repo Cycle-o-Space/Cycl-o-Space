@@ -25,18 +25,25 @@
                                     <outlet property="delegate" destination="FOy-Dh-yk4" id="zoX-4X-qnn"/>
                                 </connections>
                             </mapView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search an address" translatesAutoresizingMaskIntoConstraints="NO" id="5rA-gg-R5Y">
-                                <rect key="frame" x="0.0" y="80" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" placeholder="Search an address" showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5rA-gg-R5Y">
+                                <rect key="frame" x="0.0" y="88" width="414" height="70"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="atp-S7-BM9"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5rA-gg-R5Y" firstAttribute="top" secondItem="atp-S7-BM9" secondAttribute="top" id="2Nw-Lr-F39"/>
+                            <constraint firstItem="5rA-gg-R5Y" firstAttribute="trailing" secondItem="atp-S7-BM9" secondAttribute="trailing" id="3Gb-Mo-xhd"/>
+                            <constraint firstItem="LuV-XH-Ovn" firstAttribute="top" secondItem="5rA-gg-R5Y" secondAttribute="bottom" constant="-70" id="5LP-0B-QM1"/>
                             <constraint firstItem="atp-S7-BM9" firstAttribute="bottom" secondItem="LuV-XH-Ovn" secondAttribute="bottom" id="J1E-IA-AEy"/>
                             <constraint firstItem="LuV-XH-Ovn" firstAttribute="top" secondItem="atp-S7-BM9" secondAttribute="top" id="Jel-cA-yw6"/>
                             <constraint firstItem="LuV-XH-Ovn" firstAttribute="leading" secondItem="atp-S7-BM9" secondAttribute="leading" id="PW2-o6-tuD"/>
+                            <constraint firstItem="5rA-gg-R5Y" firstAttribute="leading" secondItem="atp-S7-BM9" secondAttribute="leading" id="QWi-br-tWi"/>
                             <constraint firstItem="LuV-XH-Ovn" firstAttribute="centerX" secondItem="ssq-iO-Mrd" secondAttribute="centerX" id="z0t-Uv-n8F"/>
                         </constraints>
                     </view>
@@ -57,6 +64,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="LuV-XH-Ovn" id="q1h-Vz-aKb"/>
+                        <outlet property="searchBar" destination="5rA-gg-R5Y" id="hib-lk-8Q4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="leI-3x-vt5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

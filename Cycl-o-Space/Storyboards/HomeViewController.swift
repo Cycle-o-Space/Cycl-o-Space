@@ -14,6 +14,9 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 10000
     

@@ -55,8 +55,10 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         //post["caption"] = commentField.text!
         post["author"] = PFUser.current()!
-        
-        
+        let postQuery = PFQuery(className:"Posts")
+        if let user = PFUser.current() {
+          postQuery.whereKey("author", equalTo: user)
+        }
         let imageData = (imageView.image!.pngData())
         let file = PFFileObject(name: "image.png", data: imageData!)
         
