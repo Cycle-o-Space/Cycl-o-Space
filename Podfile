@@ -8,6 +8,7 @@ target 'Cycl-o-Space' do
   # Pods for Cycl-o-Space
 pod 'Parse'
 pod 'AlamofireImage'
+pod 'Gemini'
 
   target 'Cycl-o-SpaceTests' do
     inherit! :search_paths

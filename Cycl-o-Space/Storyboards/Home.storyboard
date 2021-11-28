@@ -25,9 +25,14 @@
                                     <outlet property="delegate" destination="FOy-Dh-yk4" id="zoX-4X-qnn"/>
                                 </connections>
                             </mapView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search an address" translatesAutoresizingMaskIntoConstraints="NO" id="5rA-gg-R5Y">
+                                <rect key="frame" x="0.0" y="80" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="atp-S7-BM9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="atp-S7-BM9" firstAttribute="bottom" secondItem="LuV-XH-Ovn" secondAttribute="bottom" id="J1E-IA-AEy"/>
                             <constraint firstItem="LuV-XH-Ovn" firstAttribute="top" secondItem="atp-S7-BM9" secondAttribute="top" id="Jel-cA-yw6"/>
@@ -37,13 +42,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ride" id="ddX-Hy-OWU">
                         <barButtonItem key="leftBarButtonItem" title="Log Out" id="SP5-9Z-SDe">
+                            <color key="tintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="onLogOut:" destination="FOy-Dh-yk4" id="sT6-01-ad5"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Profile" id="Bq5-hQ-Vj8">
                             <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="yAh-fq-UG1" kind="show" id="nt1-Ur-sl0"/>
                             </connections>
@@ -85,14 +91,14 @@
                                 <rect key="frame" x="118" y="257" width="64" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6b-k3-gCv">
                                 <rect key="frame" x="306" y="257" width="8" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FuN-zL-ePN" userLabel="PostsDetails">
@@ -121,15 +127,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="">
-                                        <imageReference key="image" image="table" catalog="system" symbolScale="large"/>
+                                        <imageReference key="image" image="square-individual-nine-7" symbolScale="large"/>
                                     </segment>
                                     <segment title="">
-                                        <imageReference key="image" image="clock.fill" catalog="system" symbolScale="large"/>
+                                        <imageReference key="image" image="paper-map-7" symbolScale="large"/>
                                     </segment>
                                     <segment title="">
-                                        <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                        <imageReference key="image" image="heart-7" symbolScale="large"/>
                                     </segment>
                                 </segments>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <color key="selectedSegmentTintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="tabSwitch:" destination="yAh-fq-UG1" eventType="valueChanged" id="kOr-Zm-EEY"/>
@@ -137,7 +144,7 @@
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rlz-Mk-sDN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="ZYb-TV-qYX">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="rgI-XF-W7X">
@@ -172,7 +179,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="NRD-9a-Ajy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="5rc-TW-g0F"/>
                 </viewController>
@@ -185,14 +192,21 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qZG-0P-4ya" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="FY3-mX-g3U">
-                        <imageReference key="image" image="homekit" catalog="system" renderingMode="hierarchical-single">
+                        <imageReference key="image" image="homekit" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="selectedImage" image="homekit" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
                             <hierarchicalColors>
                                 <color red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color systemColor="secondaryLabelColor"/>
                                 <color systemColor="tertiaryLabelColor"/>
                             </hierarchicalColors>
                         </imageReference>
-                        <color key="badgeColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -256,6 +270,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="J4F-kh-i5s"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="UGZ-zP-DI0" id="sNU-kV-uub"/>
@@ -272,6 +287,7 @@
                     <view key="view" contentMode="scaleToFill" id="yzd-Ee-of2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="430"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sf8-vY-TbJ"/>
                         <color key="backgroundColor" red="0.37867967429999999" green="0.50474772749999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
@@ -286,6 +302,7 @@
                     <view key="view" contentMode="scaleToFill" id="Fgy-gJ-WsE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="430"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="K3t-y6-Dsi"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                 </viewController>
@@ -295,17 +312,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="clock.fill" catalog="system" width="128" height="121"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart-7" width="30" height="30"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="paper-map-7" width="30" height="30"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.crop.circle.fill.badge.plus" catalog="system" width="128" height="113"/>
-        <image name="table" catalog="system" width="128" height="93"/>
+        <image name="square-individual-nine-7" width="30" height="30"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import Gemini
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

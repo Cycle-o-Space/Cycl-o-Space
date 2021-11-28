@@ -42,7 +42,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="abl-e9-w7n" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Explore" id="brH-Jw-Jit">
-                        <imageReference key="image" image="person.3.fill" catalog="system" renderingMode="hierarchical-single">
+                        <imageReference key="image" image="person.3.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                        <imageReference key="selectedImage" image="person.3.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
                             <hierarchicalColors>
                                 <color red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color systemColor="secondaryLabelColor"/>

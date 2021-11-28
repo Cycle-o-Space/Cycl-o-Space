@@ -21,6 +21,7 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func onSIgnUp(_ sender: Any) {
         let user = PFUser()
         user.username = createUsername.text

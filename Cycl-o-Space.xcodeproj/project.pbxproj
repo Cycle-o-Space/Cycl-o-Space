@@ -194,6 +194,7 @@
 				D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */,
 				D98488F0274C511400606133 /* ProfileViewController.swift */,
 				D93FCB38274D52F800A7BC8D /* PostsDetailsViewController.swift */,
+				D93FCB3E274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift */,
 				D93FCB3A274D533300A7BC8D /* PreviousRoutesDetailsViewController.swift */,
 				D93FCB3C274D536400A7BC8D /* FavoritedDetailsViewController.swift */,
 				D936D362273DC90D00544F50 /* Feed.storyboard */,
@@ -202,7 +203,6 @@
 				D936D364273DC92600544F50 /* Camera.storyboard */,
 				D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */,
 				D936D368273DC97700544F50 /* Network.storyboard */,
-				D93FCB3E274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";

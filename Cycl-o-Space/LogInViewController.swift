@@ -10,19 +10,18 @@ import Parse
 
 class LogInViewController: UIViewController {
     
+    
+    
     @IBOutlet weak var username: UITextField!
     
     @IBOutlet weak var password: UITextField!
     
     @IBOutlet weak var indicatorSignin: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func onSignUp(_ sender: Any) {
-
     }
     
     
