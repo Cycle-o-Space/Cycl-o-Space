@@ -22,16 +22,16 @@ class PostsDetailsViewController: UIViewController /* UICollectionViewDelegate, 
 //        collectionView.delegate = self
 //        collectionView.dataSource = self
         
-        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-
-        layout.minimumLineSpacing = 55
-
-        layout.minimumInteritemSpacing = 10
-
-        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
-        
-
-        layout.itemSize = CGSize(width: width, height: width * 3 / 2)
+//        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+//
+//        layout.minimumLineSpacing = 55
+//
+//        layout.minimumInteritemSpacing = 10
+//
+//        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
+//
+//
+//        layout.itemSize = CGSize(width: width, height: width * 3 / 2)
     }
     
 //    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

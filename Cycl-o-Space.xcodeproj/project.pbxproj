@@ -27,6 +27,8 @@
 		D93FCB3B274D533300A7BC8D /* PreviousRoutesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FCB3A274D533300A7BC8D /* PreviousRoutesDetailsViewController.swift */; };
 		D93FCB3D274D536400A7BC8D /* FavoritedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FCB3C274D536400A7BC8D /* FavoritedDetailsViewController.swift */; };
 		D93FCB3F274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FCB3E274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift */; };
+		D94F6C61275437880066B84B /* FeedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F6C60275437880066B84B /* FeedDetailsViewController.swift */; };
+		D94F6C6327545A280066B84B /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F6C6227545A270066B84B /* CommentCell.swift */; };
 		D98488F1274C511400606133 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98488F0274C511400606133 /* ProfileViewController.swift */; };
 		D9D34BAA274B1DEE0012B8E2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */; };
 		D9DD3FB42749AD3900F09F85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */; };
@@ -84,6 +86,8 @@
 		D93FCB3A274D533300A7BC8D /* PreviousRoutesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRoutesDetailsViewController.swift; sourceTree = "<group>"; };
 		D93FCB3C274D536400A7BC8D /* FavoritedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritedDetailsViewController.swift; sourceTree = "<group>"; };
 		D93FCB3E274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		D94F6C60275437880066B84B /* FeedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsViewController.swift; sourceTree = "<group>"; };
+		D94F6C6227545A270066B84B /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		D98488F0274C511400606133 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				D93FCB3A274D533300A7BC8D /* PreviousRoutesDetailsViewController.swift */,
 				D93FCB3C274D536400A7BC8D /* FavoritedDetailsViewController.swift */,
 				D936D362273DC90D00544F50 /* Feed.storyboard */,
+				D94F6C60275437880066B84B /* FeedDetailsViewController.swift */,
+				D94F6C6227545A270066B84B /* CommentCell.swift */,
 				D91F895E2748610E00FF33BE /* FeedViewController.swift */,
 				D91F896027486EFA00FF33BE /* postGridCell.swift */,
 				D936D364273DC92600544F50 /* Camera.storyboard */,
@@ -465,12 +471,14 @@
 				D91F896127486EFB00FF33BE /* postGridCell.swift in Sources */,
 				D98488F1274C511400606133 /* ProfileViewController.swift in Sources */,
 				D927AB2F272342B800146371 /* AppDelegate.swift in Sources */,
+				D94F6C6327545A280066B84B /* CommentCell.swift in Sources */,
 				D9DD3FB42749AD3900F09F85 /* HomeViewController.swift in Sources */,
 				D927AB31272342B800146371 /* SceneDelegate.swift in Sources */,
 				D93FCB3D274D536400A7BC8D /* FavoritedDetailsViewController.swift in Sources */,
 				D9DD3FB62749BDC400F09F85 /* SignUpViewController.swift in Sources */,
 				D93FCB3F274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift in Sources */,
 				D93FCB39274D52F800A7BC8D /* PostsDetailsViewController.swift in Sources */,
+				D94F6C61275437880066B84B /* FeedDetailsViewController.swift in Sources */,
 				D91F895F2748610E00FF33BE /* FeedViewController.swift in Sources */,
 				D9D34BAA274B1DEE0012B8E2 /* CameraViewController.swift in Sources */,
 			);
