@@ -167,7 +167,7 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         // cell.profilePhoto.image =
         
-     //  cell.captionLabel.text = post["caption"] as? String
+       //cell.captionLabel.text = post["caption"] as? String
         
         let imageFile = post["image"] as! PFFileObject
         

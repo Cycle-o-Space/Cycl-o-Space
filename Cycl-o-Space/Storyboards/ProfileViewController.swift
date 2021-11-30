@@ -23,7 +23,11 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
     
     @IBOutlet weak var tabDetailsSwitch: UISegmentedControl!
     
-
+    @IBOutlet weak var stackView: UIStackView!
+    
+    var posts = [PFObject]()
+    
+    var currentUser = PFUser.current()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +35,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         PostDetails.isHidden = false
         PreviousRoutesDetails.isHidden = true
         Favorited.isHidden = true
+        
+        self.profileUsername.text = currentUser?.username
 
     }
 

@@ -20,15 +20,15 @@
 		D927AB52272342BE00146371 /* Cycl-o-SpaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927AB51272342BE00146371 /* Cycl-o-SpaceUITestsLaunchTests.swift */; };
 		D936D361273DC8F000544F50 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D936D360273DC8F000544F50 /* Home.storyboard */; };
 		D936D363273DC90D00544F50 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D936D362273DC90D00544F50 /* Feed.storyboard */; };
-		D936D365273DC92600544F50 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D936D364273DC92600544F50 /* Camera.storyboard */; };
 		D936D369273DC97700544F50 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D936D368273DC97700544F50 /* Network.storyboard */; };
 		D93E3A622723868C00864205 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E3A612723868B00864205 /* LogInViewController.swift */; };
+		D93F426827558A430028710A /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F426727558A430028710A /* CommentCell.swift */; };
 		D93FCB39274D52F800A7BC8D /* PostsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FCB38274D52F800A7BC8D /* PostsDetailsViewController.swift */; };
 		D93FCB3B274D533300A7BC8D /* PreviousRoutesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FCB3A274D533300A7BC8D /* PreviousRoutesDetailsViewController.swift */; };
 		D93FCB3D274D536400A7BC8D /* FavoritedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FCB3C274D536400A7BC8D /* FavoritedDetailsViewController.swift */; };
 		D93FCB3F274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FCB3E274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift */; };
 		D94F6C61275437880066B84B /* FeedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F6C60275437880066B84B /* FeedDetailsViewController.swift */; };
-		D94F6C6327545A280066B84B /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F6C6227545A270066B84B /* CommentCell.swift */; };
+		D94F6C6327545A280066B84B /* SelectedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F6C6227545A270066B84B /* SelectedPostCell.swift */; };
 		D98488F1274C511400606133 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98488F0274C511400606133 /* ProfileViewController.swift */; };
 		D9D34BAA274B1DEE0012B8E2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */; };
 		D9DD3FB42749AD3900F09F85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */; };
@@ -79,15 +79,15 @@
 		D927AB51272342BE00146371 /* Cycl-o-SpaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycl-o-SpaceUITestsLaunchTests.swift"; sourceTree = "<group>"; };
 		D936D360273DC8F000544F50 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D936D362273DC90D00544F50 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
-		D936D364273DC92600544F50 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		D936D368273DC97700544F50 /* Network.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
 		D93E3A612723868B00864205 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		D93F426727558A430028710A /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		D93FCB38274D52F800A7BC8D /* PostsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsViewController.swift; sourceTree = "<group>"; };
 		D93FCB3A274D533300A7BC8D /* PreviousRoutesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRoutesDetailsViewController.swift; sourceTree = "<group>"; };
 		D93FCB3C274D536400A7BC8D /* FavoritedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritedDetailsViewController.swift; sourceTree = "<group>"; };
 		D93FCB3E274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D94F6C60275437880066B84B /* FeedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsViewController.swift; sourceTree = "<group>"; };
-		D94F6C6227545A270066B84B /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		D94F6C6227545A270066B84B /* SelectedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPostCell.swift; sourceTree = "<group>"; };
 		D98488F0274C511400606133 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -202,11 +202,11 @@
 				D93FCB3A274D533300A7BC8D /* PreviousRoutesDetailsViewController.swift */,
 				D93FCB3C274D536400A7BC8D /* FavoritedDetailsViewController.swift */,
 				D936D362273DC90D00544F50 /* Feed.storyboard */,
-				D94F6C60275437880066B84B /* FeedDetailsViewController.swift */,
-				D94F6C6227545A270066B84B /* CommentCell.swift */,
 				D91F895E2748610E00FF33BE /* FeedViewController.swift */,
 				D91F896027486EFA00FF33BE /* postGridCell.swift */,
-				D936D364273DC92600544F50 /* Camera.storyboard */,
+				D94F6C60275437880066B84B /* FeedDetailsViewController.swift */,
+				D94F6C6227545A270066B84B /* SelectedPostCell.swift */,
+				D93F426727558A430028710A /* CommentCell.swift */,
 				D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */,
 				D936D368273DC97700544F50 /* Network.storyboard */,
 			);
@@ -333,7 +333,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D936D363273DC90D00544F50 /* Feed.storyboard in Resources */,
-				D936D365273DC92600544F50 /* Camera.storyboard in Resources */,
 				D927AB3B272342BE00146371 /* LaunchScreen.storyboard in Resources */,
 				D936D369273DC97700544F50 /* Network.storyboard in Resources */,
 				D927AB38272342BE00146371 /* Assets.xcassets in Resources */,
@@ -471,7 +470,7 @@
 				D91F896127486EFB00FF33BE /* postGridCell.swift in Sources */,
 				D98488F1274C511400606133 /* ProfileViewController.swift in Sources */,
 				D927AB2F272342B800146371 /* AppDelegate.swift in Sources */,
-				D94F6C6327545A280066B84B /* CommentCell.swift in Sources */,
+				D94F6C6327545A280066B84B /* SelectedPostCell.swift in Sources */,
 				D9DD3FB42749AD3900F09F85 /* HomeViewController.swift in Sources */,
 				D927AB31272342B800146371 /* SceneDelegate.swift in Sources */,
 				D93FCB3D274D536400A7BC8D /* FavoritedDetailsViewController.swift in Sources */,
@@ -481,6 +480,7 @@
 				D94F6C61275437880066B84B /* FeedDetailsViewController.swift in Sources */,
 				D91F895F2748610E00FF33BE /* FeedViewController.swift in Sources */,
 				D9D34BAA274B1DEE0012B8E2 /* CameraViewController.swift in Sources */,
+				D93F426827558A430028710A /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

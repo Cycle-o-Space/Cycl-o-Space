@@ -17,7 +17,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Dkd-4z-dhs">
                                 <rect key="frame" x="87" y="203.5" width="240" height="215.5"/>
-                                <color key="tintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.80589163419999998" green="0.64328490100000002" blue="0.006025660534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tUV-vs-SsF">
                                 <rect key="frame" x="10" y="475" width="394" height="218"/>
@@ -38,7 +38,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3L-tU-qFu">
                                         <rect key="frame" x="0.0" y="124" width="394" height="32"/>
-                                        <color key="tintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.80589163419999998" green="0.64328490100000002" blue="0.006025660534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Let's Ride!"/>
                                         <connections>
@@ -56,14 +56,14 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGk-w8-ZBe">
                                         <rect key="frame" x="0.0" y="4.5" width="223.5" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1r-ic-syB">
                                         <rect key="frame" x="242.5" y="0.0" width="74.5" height="31"/>
-                                        <color key="tintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.80589163419999998" green="0.64328490100000002" blue="0.006025660534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Join us!"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Join us!"/>
                                         <connections>
                                             <segue destination="Om9-fs-pRi" kind="presentation" id="A1R-nM-Wap"/>
                                         </connections>
@@ -72,7 +72,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NpQ-JY-spE"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.070666210595750581" green="0.26459691234016702" blue="0.30145799406780338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Wzi-ig-rO9" firstAttribute="top" secondItem="tUV-vs-SsF" secondAttribute="bottom" constant="71" id="JPQ-TK-ug2"/>
                             <constraint firstItem="tUV-vs-SsF" firstAttribute="centerX" secondItem="Wzi-ig-rO9" secondAttribute="centerX" id="M0V-s4-vpM"/>
@@ -107,7 +107,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bicycle.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7EK-9D-3D2">
                                 <rect key="frame" x="87" y="179.5" width="240" height="216"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.80589163419999998" green="0.64328490100000002" blue="0.006025660534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Create Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3kp-3I-DeP">
                                 <rect key="frame" x="20" y="467" width="374" height="34"/>
@@ -128,7 +128,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guA-J3-jNP">
                                 <rect key="frame" x="87" y="680" width="221" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.80589163419999998" green="0.64328490100000002" blue="0.006025660534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ready To Go!"/>
                                 <connections>
@@ -141,11 +141,11 @@
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cDd-kM-PlJ"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.070666210600000001" green="0.26459691229999999" blue="0.30145799410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="1KN-UR-Wfa">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="iNi-gu-GVj">
-                            <color key="tintColor" red="0.78039215689999997" green="0.4728091203" blue="0.51162358529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.80589163419999998" green="0.64328490100000002" blue="0.006025660534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="backButton:" destination="AJK-9D-MFF" id="hKX-1j-mPs"/>
                             </connections>
@@ -179,17 +179,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUg-3M-pol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="-1211"/>
-        </scene>
-        <!--Camera-->
-        <scene sceneID="fbo-Xt-uH4">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Camera" id="4yi-Hd-kci" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Nwl-ua-8YZ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bbV-yA-x9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2507" y="-1211"/>
+            <point key="canvasLocation" x="1925" y="-1211"/>
         </scene>
         <!--Network-->
         <scene sceneID="LPo-iE-tfS">
@@ -215,7 +205,6 @@
                     <connections>
                         <segue destination="9md-Eg-J3v" kind="relationship" relationship="viewControllers" id="0Ua-JX-Ync"/>
                         <segue destination="Tyv-QY-tBs" kind="relationship" relationship="viewControllers" id="tMz-aE-5XG"/>
-                        <segue destination="4yi-Hd-kci" kind="relationship" relationship="viewControllers" id="q8c-HD-bVS"/>
                         <segue destination="b6d-YC-LbT" kind="relationship" relationship="viewControllers" id="G9U-wC-Qt3"/>
                     </connections>
                 </tabBarController>
@@ -231,6 +220,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DNH-er-s79">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -249,6 +241,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="m1I-2q-uYT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

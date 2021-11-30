@@ -9,7 +9,7 @@ import UIKit
 import Parse
 import MessageInputBar
 
-class FeedDetailsViewController: UIViewController, MessageInputBarDelegate /*, UITableViewDataSource, UITableViewDelegate*/ {
+class FeedDetailsViewController: UIViewController, MessageInputBarDelegate, UITableViewDataSource, UITableViewDelegate {
 
     
     @IBOutlet weak var tableView: UITableView!
@@ -38,8 +38,10 @@ class FeedDetailsViewController: UIViewController, MessageInputBarDelegate /*, U
         center.addObserver(self, selector: #selector(keyboardWillBeHidden(note:)), name: UIResponder.keyboardWillHideNotification, object: nil)
 
         // Do any additional setup after loading the view.
-//        tableView.dataSource = self
-//        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.rowHeight = 540
+        
     }
     @objc func keyboardWillBeHidden(note: Notification) {
         commentBar.inputTextView.text = nil
@@ -56,13 +58,26 @@ class FeedDetailsViewController: UIViewController, MessageInputBarDelegate /*, U
         return showsCommentBar
     }
     
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 0
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        return 0
-//    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.row == 0 {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SelectedPostCell", for: indexPath) as! SelectedPostCell
+            
+
+        return cell
+            
+        } else {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell", for: indexPath) as! CommentCell
+
+            return cell
+        }
+    }
     
     /*
     // MARK: - Navigation

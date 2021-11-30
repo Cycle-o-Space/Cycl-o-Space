@@ -2,7 +2,7 @@
 //  CommentCell.swift
 //  Cycl-o-Space
 //
-//  Created by Kervens Delpe on 11/28/21.
+//  Created by Kervens Delpe on 11/29/21.
 //
 
 import UIKit
@@ -10,16 +10,14 @@ import UIKit
 class CommentCell: UITableViewCell {
     
     
-    @IBOutlet weak var selectedPostImage: UIImageView!
-    
-    @IBOutlet weak var usernameLabel: UILabel!
-    
-    @IBOutlet weak var locationLabel: UILabel!
-    
-    @IBOutlet weak var userProfilePicture: UIImageView!
+    @IBOutlet weak var currentUsername: UILabel!
     
     
-    @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var currentUserPhoto: UIImageView!
+    
+    
+    @IBOutlet weak var commentLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

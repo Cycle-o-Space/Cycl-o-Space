@@ -16,7 +16,7 @@ class postGridCell: GeminiCell {
     
     @IBOutlet weak var postImage: UIImageView!
     
-   // @IBOutlet weak var profilePhoto: UIImageView!
+    @IBOutlet weak var profilePhoto: UIImageView!
     
     @IBOutlet weak var usernameLabel: UILabel!
     

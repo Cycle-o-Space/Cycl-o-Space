@@ -15,6 +15,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBOutlet weak var commentField: UITextField!
     
+    @IBOutlet weak var profilePhoto: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,7 +55,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         let post = PFObject(className: "Posts")
         
-        //post["caption"] = commentField.text!
+        post["caption"] = commentField.text!
         post["author"] = PFUser.current()!
         let postQuery = PFQuery(className:"Posts")
         if let user = PFUser.current() {
@@ -67,12 +69,41 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         post.saveInBackground { (success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
+
                 print("saved!")
             } else {
                 print ("error!")
             }
         }
         
+    }
+    
+    
+    @IBAction func onEditProfilePicture(_ sender: Any) {
+        
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            picker.sourceType = .camera
+        } else {
+            picker.sourceType = .photoLibrary
+        }
+   
+        present(picker, animated: true, completion: nil)
+        
+    }
+    
+    
+    @IBAction func onChangeProfilePicture(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func goBackButton(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     
