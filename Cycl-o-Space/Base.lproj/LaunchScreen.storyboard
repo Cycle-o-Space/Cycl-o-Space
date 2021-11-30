@@ -17,7 +17,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bicycle.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kzS-s9-AHu">
                                 <rect key="frame" x="82" y="348.5" width="250" height="199"/>
-                                <color key="tintColor" red="0.7803921568627451" green="0.47280912032910555" blue="0.51162358532814267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.80589163419999998" green="0.64328490100000002" blue="0.006025660534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Edy-Ef-ijm"/>
                                     <constraint firstAttribute="width" constant="250" id="dgs-1g-016"/>
