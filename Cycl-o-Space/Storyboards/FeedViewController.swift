@@ -196,6 +196,8 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
             self.collectionView.animateCell(cell)
         }
     }
+    
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

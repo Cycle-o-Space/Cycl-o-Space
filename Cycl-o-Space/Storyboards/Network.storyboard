@@ -37,25 +37,19 @@
             </objects>
             <point key="canvasLocation" x="3258" y="-181"/>
         </scene>
-        <!--Explore-->
+        <!--Navigation Controller-->
         <scene sceneID="nF0-A0-A2O">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="abl-e9-w7n" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore" id="brH-Jw-Jit">
-                        <imageReference key="image" image="person.3.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
+                    <tabBarItem key="tabBarItem" title="" id="brH-Jw-Jit">
+                        <imageReference key="image" image="icons8-adventure-40" symbolScale="large" renderingMode="hierarchical-single">
                             <hierarchicalColors>
                                 <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color systemColor="secondaryLabelColor"/>
                                 <color systemColor="tertiaryLabelColor"/>
                             </hierarchicalColors>
                         </imageReference>
-                        <imageReference key="selectedImage" image="person.3.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
-                            <hierarchicalColors>
-                                <color red="0.80844046849999995" green="0.64531945079999997" blue="0.0060447181960000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color systemColor="secondaryLabelColor"/>
-                                <color systemColor="tertiaryLabelColor"/>
-                            </hierarchicalColors>
-                        </imageReference>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="3"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -77,7 +71,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="icons8-adventure-40" width="40" height="40"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

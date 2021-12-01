@@ -11,6 +11,17 @@ import MessageInputBar
 
 class FeedDetailsViewController: UIViewController, MessageInputBarDelegate, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var selectedPostImage: UIImageView!
+    
+    @IBOutlet weak var postUsernameLabel: UILabel!
+    
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    @IBOutlet weak var userProfilePicture: UIImageView!
+    
+    @IBOutlet weak var captionLabel: UILabel!
+    
+    @IBOutlet weak var favoriteCount: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -40,7 +51,7 @@ class FeedDetailsViewController: UIViewController, MessageInputBarDelegate, UITa
         // Do any additional setup after loading the view.
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.rowHeight = 540
+        tableView.rowHeight = 105
         
     }
     @objc func keyboardWillBeHidden(note: Notification) {
@@ -59,24 +70,16 @@ class FeedDetailsViewController: UIViewController, MessageInputBarDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 0 {
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SelectedPostCell", for: indexPath) as! SelectedPostCell
-            
-
-        return cell
-            
-        } else {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell", for: indexPath) as! CommentCell
 
             return cell
-        }
+        
     }
     
     /*

@@ -10,15 +10,7 @@ import UIKit
 class SelectedPostCell: UITableViewCell {
     
     
-    @IBOutlet weak var selectedPostImage: UIImageView!
-    
-    @IBOutlet weak var usernameLabel: UILabel!
-    
-    @IBOutlet weak var locationLabel: UILabel!
-    
-    @IBOutlet weak var userProfilePicture: UIImageView!
-    
-    @IBOutlet weak var captionLabel: UILabel!
+
     
 //    override func awakeFromNib() {
 //        super.awakeFromNib()

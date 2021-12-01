@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LuV-XH-Ovn">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <connections>
                                     <outlet property="delegate" destination="FOy-Dh-yk4" id="zoX-4X-qnn"/>
                                 </connections>
@@ -40,7 +40,7 @@
                             <constraint firstItem="5rA-gg-R5Y" firstAttribute="top" secondItem="atp-S7-BM9" secondAttribute="top" id="2Nw-Lr-F39"/>
                             <constraint firstItem="5rA-gg-R5Y" firstAttribute="trailing" secondItem="atp-S7-BM9" secondAttribute="trailing" id="3Gb-Mo-xhd"/>
                             <constraint firstItem="LuV-XH-Ovn" firstAttribute="top" secondItem="5rA-gg-R5Y" secondAttribute="bottom" constant="-70" id="5LP-0B-QM1"/>
-                            <constraint firstItem="atp-S7-BM9" firstAttribute="bottom" secondItem="LuV-XH-Ovn" secondAttribute="bottom" id="J1E-IA-AEy"/>
+                            <constraint firstItem="atp-S7-BM9" firstAttribute="bottom" secondItem="LuV-XH-Ovn" secondAttribute="bottom" constant="-83" id="J1E-IA-AEy"/>
                             <constraint firstItem="LuV-XH-Ovn" firstAttribute="top" secondItem="atp-S7-BM9" secondAttribute="top" id="Jel-cA-yw6"/>
                             <constraint firstItem="LuV-XH-Ovn" firstAttribute="leading" secondItem="atp-S7-BM9" secondAttribute="leading" id="PW2-o6-tuD"/>
                             <constraint firstItem="5rA-gg-R5Y" firstAttribute="leading" secondItem="atp-S7-BM9" secondAttribute="leading" id="QWi-br-tWi"/>
@@ -55,7 +55,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Profile" id="Bq5-hQ-Vj8">
-                            <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
+                            <imageReference key="image" image="icons8-user-40" symbolScale="large"/>
                             <color key="tintColor" red="0.80844046849999995" green="0.64531945079999997" blue="0.0060447181960000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="yAh-fq-UG1" kind="show" id="nt1-Ur-sl0"/>
@@ -155,8 +155,7 @@
                         <color key="backgroundColor" red="0.070666210600000001" green="0.26459691229999999" blue="0.30145799410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="ZYb-TV-qYX">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="rgI-XF-W7X">
-                            <color key="tintColor" red="0.80589163419999998" green="0.64328490100000002" blue="0.006025660534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" image="icons8-settings-40 (1)" id="rgI-XF-W7X">
                             <connections>
                                 <segue destination="SRq-P0-MN7" kind="show" id="cOy-88-SJa"/>
                             </connections>
@@ -196,26 +195,19 @@
             </objects>
             <point key="canvasLocation" x="542" y="-178"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="wvR-9i-PpW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qZG-0P-4ya" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="FY3-mX-g3U">
-                        <imageReference key="image" image="homekit" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
+                    <tabBarItem key="tabBarItem" title="" id="FY3-mX-g3U">
+                        <imageReference key="image" image="icons8-person-biking-40" symbolScale="small" renderingMode="hierarchical-single">
                             <hierarchicalColors>
                                 <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color systemColor="secondaryLabelColor"/>
                                 <color systemColor="tertiaryLabelColor"/>
                             </hierarchicalColors>
                         </imageReference>
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <imageReference key="selectedImage" image="homekit" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
-                            <hierarchicalColors>
-                                <color red="0.80844046849999995" green="0.64531945079999997" blue="0.0060447181960000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color systemColor="secondaryLabelColor"/>
-                                <color systemColor="tertiaryLabelColor"/>
-                            </hierarchicalColors>
-                        </imageReference>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="3"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -322,9 +314,10 @@
     </scenes>
     <resources>
         <image name="heart-7" width="30" height="30"/>
-        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="icons8-person-biking-40" width="40" height="40"/>
+        <image name="icons8-settings-40 (1)" width="40" height="40"/>
+        <image name="icons8-user-40" width="40" height="40"/>
         <image name="paper-map-7" width="30" height="30"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.crop.circle.fill.badge.plus" catalog="system" width="128" height="113"/>
         <image name="square-individual-nine-7" width="30" height="30"/>
         <namedColor name="AccentColor">

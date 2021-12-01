@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C7ECA6C9F84B6A63F7D96713 /* Pods_Cycl_o_Space.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066A277269766C826396F7DF /* Pods_Cycl_o_Space.framework */; };
+		D9132F93275727C100428312 /* DirectMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9132F92275727C000428312 /* DirectMessageViewController.swift */; };
+		D9132F95275728E200428312 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9132F94275728E200428312 /* ChatCell.swift */; };
 		D91F895F2748610E00FF33BE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91F895E2748610E00FF33BE /* FeedViewController.swift */; };
 		D91F896127486EFB00FF33BE /* postGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91F896027486EFA00FF33BE /* postGridCell.swift */; };
 		D927AB2F272342B800146371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927AB2E272342B800146371 /* AppDelegate.swift */; };
@@ -28,7 +30,6 @@
 		D93FCB3D274D536400A7BC8D /* FavoritedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FCB3C274D536400A7BC8D /* FavoritedDetailsViewController.swift */; };
 		D93FCB3F274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FCB3E274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift */; };
 		D94F6C61275437880066B84B /* FeedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F6C60275437880066B84B /* FeedDetailsViewController.swift */; };
-		D94F6C6327545A280066B84B /* SelectedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F6C6227545A270066B84B /* SelectedPostCell.swift */; };
 		D98488F1274C511400606133 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98488F0274C511400606133 /* ProfileViewController.swift */; };
 		D9D34BAA274B1DEE0012B8E2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */; };
 		D9DD3FB42749AD3900F09F85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */; };
@@ -63,6 +64,8 @@
 		672BD0FDB987D0FFA52E25DD /* Pods-Cycl-o-Space-Cycl-o-SpaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cycl-o-Space-Cycl-o-SpaceUITests.release.xcconfig"; path = "Target Support Files/Pods-Cycl-o-Space-Cycl-o-SpaceUITests/Pods-Cycl-o-Space-Cycl-o-SpaceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BAC1172B9D87DA9DF7146BE6 /* Pods-Cycl-o-Space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cycl-o-Space.release.xcconfig"; path = "Target Support Files/Pods-Cycl-o-Space/Pods-Cycl-o-Space.release.xcconfig"; sourceTree = "<group>"; };
 		D0F8723D55D359C716E395F9 /* Pods_Cycl_o_Space_Cycl_o_SpaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cycl_o_Space_Cycl_o_SpaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9132F92275727C000428312 /* DirectMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageViewController.swift; sourceTree = "<group>"; };
+		D9132F94275728E200428312 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		D91F895E2748610E00FF33BE /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D91F896027486EFA00FF33BE /* postGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postGridCell.swift; sourceTree = "<group>"; };
 		D927AB2B272342B800146371 /* Cycl-o-Space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cycl-o-Space.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +90,6 @@
 		D93FCB3C274D536400A7BC8D /* FavoritedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritedDetailsViewController.swift; sourceTree = "<group>"; };
 		D93FCB3E274D8D1F00A7BC8D /* PostsDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D94F6C60275437880066B84B /* FeedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsViewController.swift; sourceTree = "<group>"; };
-		D94F6C6227545A270066B84B /* SelectedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPostCell.swift; sourceTree = "<group>"; };
 		D98488F0274C511400606133 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D9DD3FB32749AD3800F09F85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -205,8 +207,9 @@
 				D91F895E2748610E00FF33BE /* FeedViewController.swift */,
 				D91F896027486EFA00FF33BE /* postGridCell.swift */,
 				D94F6C60275437880066B84B /* FeedDetailsViewController.swift */,
-				D94F6C6227545A270066B84B /* SelectedPostCell.swift */,
 				D93F426727558A430028710A /* CommentCell.swift */,
+				D9132F92275727C000428312 /* DirectMessageViewController.swift */,
+				D9132F94275728E200428312 /* ChatCell.swift */,
 				D9D34BA9274B1DEE0012B8E2 /* CameraViewController.swift */,
 				D936D368273DC97700544F50 /* Network.storyboard */,
 			);
@@ -466,11 +469,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93FCB3B274D533300A7BC8D /* PreviousRoutesDetailsViewController.swift in Sources */,
+				D9132F93275727C100428312 /* DirectMessageViewController.swift in Sources */,
 				D93E3A622723868C00864205 /* LogInViewController.swift in Sources */,
+				D9132F95275728E200428312 /* ChatCell.swift in Sources */,
 				D91F896127486EFB00FF33BE /* postGridCell.swift in Sources */,
 				D98488F1274C511400606133 /* ProfileViewController.swift in Sources */,
 				D927AB2F272342B800146371 /* AppDelegate.swift in Sources */,
-				D94F6C6327545A280066B84B /* SelectedPostCell.swift in Sources */,
 				D9DD3FB42749AD3900F09F85 /* HomeViewController.swift in Sources */,
 				D927AB31272342B800146371 /* SceneDelegate.swift in Sources */,
 				D93FCB3D274D536400A7BC8D /* FavoritedDetailsViewController.swift in Sources */,
