@@ -129,6 +129,13 @@ Latest
 
 <img src="http://g.recordit.co/maUNpTag6v.gif" width=600>
 
+<img src="https://media.giphy.com/media/MdIJtrda8K1tbFihAb/giphy.gif" width=600>
+
+<img src="https://media.giphy.com/media/nccnm8cihTlTkdT1GP/giphy.gif" width=600>
+
+
+
+
 ### [BONUS] Interactive Prototype
 
 ## Schema 
