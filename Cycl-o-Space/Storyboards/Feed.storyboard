@@ -366,28 +366,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.80844046849999995" green="0.64531945079999997" blue="0.0060447181960000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Submit"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Submit Post"/>
                                 <connections>
                                     <action selector="onSubmitButton:" destination="T47-YQ-tAo" eventType="touchUpInside" id="zyl-LK-Fhs"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xdq-f6-rFF">
-                                <rect key="frame" x="-3" y="100" width="127" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.80589163419999998" green="0.64328490100000002" blue="0.006025660534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ZHv-RK-dvS" appends="YES" id="L0U-Sz-NCa"/>
-                                </connections>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYl-YR-7VX">
-                                <rect key="frame" x="123" y="131" width="168" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.80589163419999998" green="0.64328490100000002" blue="0.006025660534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Change profile picture"/>
-                                <connections>
-                                    <action selector="onChangeProfilePicture:" destination="T47-YQ-tAo" eventType="touchUpInside" id="9mT-FK-h9H"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -404,9 +385,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="commentField" destination="KTP-gb-kNz" id="5ti-C4-XR1"/>
+                        <outlet property="captionField" destination="KTP-gb-kNz" id="N97-ds-Yop"/>
                         <outlet property="imageView" destination="LuE-JO-Fs9" id="YAk-Bs-7ki"/>
-                        <outlet property="profilePhoto" destination="xdq-f6-rFF" id="rhw-88-0Ac"/>
                     </connections>
                 </viewController>
                 <tapGestureRecognizer id="keO-Hq-Uxr" userLabel="Post Tap Gesture Recognizer">

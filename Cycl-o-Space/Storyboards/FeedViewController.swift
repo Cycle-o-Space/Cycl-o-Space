@@ -39,57 +39,19 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
             .yawRotationAnimation()
             .degree(45)
             .yawEffect(.yawUp)
-           // .cornerRadius()
-//
-//        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-//
-//        layout.minimumLineSpacing = 55
-//
-//        layout.minimumInteritemSpacing = 10
-//
-//        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 2
-//
-//        layout.itemSize = CGSize(width: width, height: width * 3 / 2)
+
 
     }
     
-//    override func viewDidLayoutSubviews() {
-//
-//           super.viewDidLayoutSubviews()
-//
-//           flowLayout.minimumLineSpacing = 30
-//
-//           flowLayout.minimumInteritemSpacing = 5
-//
-//        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-//
-//      }
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        let totalwidth = collectionView.bounds.size.width;
-//
-//        let numberOfCellsPerRow = 1
-//
-//        let oddEven = indexPath.row % 2
-//
-//        let dimensions = CGFloat(Int(totalwidth) / numberOfCellsPerRow)
-//
-//        if (oddEven == 0) {
-//           // flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-//            return CGSize(width: dimensions , height: dimensions )
-//        } else {
-//          //  flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-//            return CGSize(width: dimensions , height: dimensions )
-//        }
-//    }
+
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-
-
         myRefreshControl.addTarget(self, action: #selector(loadMorePosts), for: .valueChanged)
         self.collectionView.refreshControl = myRefreshControl
+        
+        collectionView.reloadData()
 
     }
     @objc func loadPosts(){
@@ -162,10 +124,7 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
        // let user = post["author"] as! PFUser
 
-        cell.usernameLabel.text = PFUser.current()?.username
-
-        
-        // cell.profilePhoto.image =
+        cell.usernameLabel.text = (PFUser.current()?.username)! + "!";
         
        //cell.captionLabel.text = post["caption"] as? String
         
@@ -201,7 +160,7 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ //   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         // Get the new view controller using segue.destination.
         

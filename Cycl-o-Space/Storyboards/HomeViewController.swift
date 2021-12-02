@@ -98,6 +98,8 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             delegate.window?.rootViewController = loginViewController
             
         }
+    
+    
 
     
     /*

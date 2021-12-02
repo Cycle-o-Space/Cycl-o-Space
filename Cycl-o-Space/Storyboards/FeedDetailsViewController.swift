@@ -39,6 +39,12 @@ class FeedDetailsViewController: UIViewController, MessageInputBarDelegate, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let post = PFObject(className: "Posts")
+        
+        post["author"] = PFUser.current()?.username
+        post["caption"] = captionLabel.text!
+        
+        
         commentBar.inputTextView.placeholder = "Add a comment..."
         commentBar.sendButton.title = "Post"
         commentBar.delegate = self
