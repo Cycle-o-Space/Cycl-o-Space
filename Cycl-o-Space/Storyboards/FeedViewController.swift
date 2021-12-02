@@ -120,13 +120,16 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "postGridCell", for: indexPath) as! postGridCell
         self.collectionView.animateCell(cell)
-                
-        
-       // let user = post["author"] as! PFUser
 
-        cell.usernameLabel.text = (PFUser.current()?.username)! + "!";
+        cell.usernameLabel.text = PFUser.current()?.username
         
-       //cell.captionLabel.text = post["caption"] as? String
+        let profleImageFile = currentUser!["profileImage"] as! PFFileObject
+        let profileImageurlString = profleImageFile.url!
+        let profileImageurl = URL(string: profileImageurlString)!
+        cell.profilePhoto.af_setImage(withURL: profileImageurl)
+        
+        cell.profilePhoto?.layer.cornerRadius = (cell.profilePhoto?.frame.width)! / 6
+       
         
         let imageFile = post["image"] as! PFFileObject
         

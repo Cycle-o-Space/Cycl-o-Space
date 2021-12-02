@@ -35,7 +35,15 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         Favorited.isHidden = true
         
         self.profileUsername.text = currentUser?.username
-        
+        let imageFile = currentUser!["profileImage"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        profilePic.af_setImage(withURL: url)
+        profilePic.layer.borderWidth = 1.0
+        profilePic.layer.masksToBounds = false
+//        profilePic.layer.borderColor = UIColor.white.cgColor
+       profilePic.layer.cornerRadius = profilePic.frame.size.width/6
+        profilePic.clipsToBounds = true
 
     }
     
@@ -48,9 +56,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         
         profilepictureQuery.findObjectsInBackground { (profilePicture, error) in
             if profilePicture != nil {
-                //self.profilePicture.removeAll()
+                
                 self.profilePicture = profilePicture!
-                //self.profilePicture.reverse()
+                
             } else {
                 print("Error: \(String(describing: error?.localizedDescription))")
             }

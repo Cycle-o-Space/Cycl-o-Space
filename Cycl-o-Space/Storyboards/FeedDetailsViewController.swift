@@ -39,7 +39,7 @@ class FeedDetailsViewController: UIViewController, MessageInputBarDelegate, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let post = PFObject(className: "Posts")
+        let post = PFObject(className: "selectedPost")
         
         post["author"] = PFUser.current()?.username
         post["caption"] = captionLabel.text!
