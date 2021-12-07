@@ -133,8 +133,9 @@ Latest
 
 <img src="https://media.giphy.com/media/nccnm8cihTlTkdT1GP/giphy.gif" width=600>
 
-<img scr=" https://i.imgur.com/D2qbTd3.gif" width=600>
 
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/30179889/144967416-bc9083be-323d-4e45-95f0-185f0cd542f2.gif)
 
 
 
